@@ -1,0 +1,90 @@
+FEATURE_NAME,DATA_TYPE,COLUMN,DESCRIPTION
+business_id,string,BUSINESS,Unique identifier for each business
+business_name,string,BUSINESS,Name of the business
+industry_sector,categorical (enum),BUSINESS,"Industry classification (Retail, Food Services, etc.)"
+business_age_years,float,BUSINESS,"Years in business (e.g., 2.5)"
+region_parish,string,BUSINESS,Parish/County where business operates
+zip_code,string,BUSINESS,ZIP code for geographic context
+annual_revenue,float,BUSINESS,Total revenue last 12 months (dollars)
+revenue_growth_yoy,float,BUSINESS,Year-over-year revenue change (percentage)
+profit_margin,float,BUSINESS,Net income / Revenue
+avg_bank_balance,float,BUSINESS,Average cash balance in main checking accounts
+cash_to_monthly_expense_ratio,float,BUSINESS,Months of operating expense coverage by cash on hand
+overdraft_days_last_12m,int,BUSINESS,Count of days account overdraft occurred
+loan_amount_outstanding,float,BUSINESS,Total current loan balance across all loans
+debt_to_revenue,float,BUSINESS,Total loans / Annual revenue (leverage metric)
+interest_rate_weighted_avg,float,BUSINESS,Weighted average interest rate on loans
+term_months_remaining,int,BUSINESS,Months remaining on loan term
+days_past_due_max_last_12m,int,BUSINESS,Maximum days past due in last 12 months
+num_active_loans,int,BUSINESS,Count of active loans/credit lines
+num_employees,int,BUSINESS,Total number of employees
+total_payroll_last_12m,float,BUSINESS,Total payroll cost last 12 months
+missed_payroll_count_last_12m,int,BUSINESS,Count of missed payroll runs in last 12 months
+payroll_growth_yoy,float,BUSINESS,Payroll expense YoY growth
+credit_score_business,int,BUSINESS,Business credit score (300-850 range)
+num_returned_payments_last_12m,int,BUSINESS,Count of returned/NSF payments
+has_tax_lien,binary (0/1),BUSINESS,Has outstanding tax lien (yes/no)
+prior_default_or_bankruptcy,binary (0/1),BUSINESS,History of bankruptcy or default
+avg_monthly_card_spend,float,BUSINESS,Average monthly spending on business credit cards
+card_spend_growth_yoy,float,BUSINESS,Card spend YoY growth
+utilization_rate_card,float,BUSINESS,Credit card balance / Limit
+days_late_card_payment_max_last_12m,int,BUSINESS,Max days late on credit card payments
+igs_spend_growth_tract,float,BUSINESS,Mastercard spending growth % for tract (benchmark)
+igs_new_businesses_growth_tract,float,BUSINESS,Mastercard new business growth % for tract (benchmark)
+igs_small_business_loans_growth_tract,float,BUSINESS,FFIEC small business loans growth % for tract (benchmark)
+igs_personal_income_growth_tract,float,BUSINESS,ACS personal income growth % for tract (benchmark)
+igs_spending_per_capita_growth_tract,float,BUSINESS,Mastercard per capita spend growth % for tract (benchmark)
+igs_labor_market_engagement_index,float,BUSINESS,"Combined employment, labor force, education index for tract"
+igs_minority_women_owned_pct,float,BUSINESS,Pct of minority/women-owned businesses in tract
+igs_commercial_diversity_pct,float,BUSINESS,Diversity of commercial industries in tract (%)
+igs_tract_population,int,BUSINESS,Total population of the tract
+igs_median_income_tract,float,BUSINESS,Median income in the tract (benchmark comparison)
+revenue_growth_vs_tract_benchmark,float,BUSINESS,Business revenue_growth_yoy vs tract new_businesses benchmark (delta)
+spending_growth_vs_tract_benchmark,float,BUSINESS,Business spend growth vs tract spend growth benchmark (delta)
+new_business_growth_vs_tract_benchmark,float,BUSINESS,Tract new business growth rate (%)
+personal_income_growth_vs_tract_benchmark,float,BUSINESS,Tract personal income growth rate (%)
+labor_market_health_score,float,BUSINESS,Aggregate labor market engagement and economic health of tract
+risk_score,int (0-100),STATE,XGBoost model risk score (0-100 scale)
+risk_band,categorical (Low/Medium/High),STATE,"Risk classification: Low (0-40), Medium (41-75), High (76-100)"
+default_flag,binary (0/1),STATE,"Binary default risk flag (1=at risk, 0=stable)"
+revenue_health_index,int (0-100),STATE,Revenue performance & growth stability index (0-100)
+profitability_index,int (0-100),STATE,Profit margin health score (0-100)
+liquidity_index,int (0-100),STATE,Cash position & liquidity score (0-100)
+debt_burden_index,int (0-100),STATE,Loan burden & repayment capacity score (0-100)
+workforce_stability_index,int (0-100),STATE,Employee count stability & payroll reliability (0-100)
+credit_compliance_index,int (0-100),STATE,Credit history & compliance status (0-100)
+credit_constrained_flag,binary (0/1),STATE,Flag if debt servicing is constrained by cash
+job_generator_at_risk_flag,binary (0/1),STATE,Flag if business is high-employment but high-risk
+high_growth_low_cash_flag,binary (0/1),STATE,Flag if strong growth but weak liquidity position
+business_name_llm,string,LLM,Business name for narrative
+industry_sector_llm,string,LLM,Industry for context-specific recommendations
+region_parish_llm,string,LLM,Location for regional market context
+business_age_years_llm,float,LLM,Business maturity indicator
+annual_revenue_llm,float,LLM,Revenue level in currency
+revenue_growth_yoy_llm,float,LLM,Revenue momentum as percentage
+profit_margin_llm,float,LLM,Profitability as percentage
+avg_bank_balance_llm,float,LLM,Liquid cash position in currency
+cash_runway_months_llm,float,LLM,Cash runway in months (narrative)
+loan_amount_outstanding_llm,float,LLM,Debt obligation in currency
+debt_to_revenue_llm,float,LLM,Leverage ratio
+interest_rate_weighted_avg_llm,float,LLM,Borrowing cost percentage
+num_employees_llm,int,LLM,Employment count for jobs narrative
+payroll_growth_yoy_llm,float,LLM,Payroll spending trend %
+missed_payroll_count_last_12m_llm,int,LLM,Payroll reliability issues count
+credit_score_business_llm,int,LLM,Credit history numeric score
+has_tax_lien_llm,binary,LLM,Compliance red flag (yes/no)
+prior_default_or_bankruptcy_llm,binary,LLM,Prior credit event (yes/no)
+revenue_trend_narrative,string,LLM,Narrative: Growing/Flat/Declining revenue trend
+payroll_trend_narrative,string,LLM,Narrative: Reliable/At-risk payroll trend
+liquidity_trend_narrative,string,LLM,Narrative: Strong/Weak/Declining liquidity trend
+risk_score_llm,int,LLM,Risk score for LLM narrative
+risk_band_llm,string,LLM,Risk classification for recommendations
+revenue_health_index_llm,int,LLM,Performance index (0-100)
+liquidity_index_llm,int,LLM,Performance index (0-100)
+debt_burden_index_llm,int,LLM,Performance index (0-100)
+workforce_stability_index_llm,int,LLM,Performance index (0-100)
+credit_compliance_index_llm,int,LLM,Performance index (0-100)
+tract_median_income_context,float,LLM,Median income in tract (context for business)
+tract_labor_market_health,string,LLM,Labor market health (narrative context)
+tract_new_business_growth_context,float,LLM,Local new business formation rate (context)
+tract_small_business_loan_context,float,LLM,Local small business lending trend (context)
