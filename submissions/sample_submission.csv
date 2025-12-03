@@ -1,0 +1,51 @@
+business_id,industry_sector,region_parish,annual_revenue,credit_score_business,profit_margin,debt_to_revenue,actual_risk_score,actual_default_flag,predicted_default_probability,predicted_default_flag,predicted_risk_score,predicted_risk_band,risk_score_error,default_correct
+TEST_0001,Agriculture,Caddo,303421,811.0,0.325,0.5259,16,0,0.0,0,16.06,Low,0.06,1
+TEST_0002,Technology,Rapides,6566899,826.0,0.1488,0.9955,48,0,0.0047,0,53.96,Medium,5.96,1
+TEST_0003,Retail,St. Tammany,219923,680.0,0.1376,1.3514,100,1,1.0,1,100.0,High,0.0,1
+TEST_0004,Healthcare,Caddo,587105,807.0,0.3789,0.2655,1,0,0.0,0,5.05,Low,4.05,1
+TEST_0005,Transportation,St. Tammany,736944,819.0,0.3446,0.0,0,0,0.0,0,3.7,Low,3.7,1
+TEST_0006,Technology,Caddo,1331485,713.0,0.2623,1.5885,75,0,0.1863,0,75.3,High,0.3,1
+TEST_0007,Construction,Rapides,377346,666.0,0.0613,1.602,100,1,1.0,1,100.0,High,0.0,1
+TEST_0008,Food Services,St. Tammany,782888,690.0,0.1334,0.4487,77,0,0.1524,0,76.88,High,-0.12,1
+TEST_0009,Healthcare,Ouachita,905232,824.0,0.3113,0.612,2,0,0.0,0,3.59,Low,1.59,1
+TEST_0010,Retail,St. Tammany,613886,727.0,0.2933,0.0,9,0,0.0004,0,18.83,Low,9.83,1
+TEST_0011,Food Services,Tangipahoa,298273,750.0,0.1831,1.6573,49,0,0.0007,0,48.85,Medium,-0.15,1
+TEST_0012,Professional Services,St. Tammany,534716,795.0,0.1641,0.485,34,0,0.0002,0,33.67,Low,-0.33,1
+TEST_0013,Food Services,Caddo,778050,813.0,0.1929,1.0089,28,0,1e-04,0,29.1,Low,1.1,1
+TEST_0014,Retail,St. Tammany,51088,,0.1815,1.0623,99,1,0.4404,0,68.33,Medium,-30.67,0
+TEST_0015,Transportation,St. Tammany,255729,751.0,0.2209,1.6167,87,1,0.8112,1,82.55,High,-4.45,1
+TEST_0016,Transportation,St. Tammany,91785,785.0,0.114,0.4572,56,0,0.0232,0,61.2,Medium,5.2,1
+TEST_0017,Food Services,Orleans,319579,775.0,0.1586,0.9972,28,0,0.0002,0,36.61,Low,8.61,1
+TEST_0018,Construction,Calcasieu,213403,698.0,0.1029,1.21,69,0,0.0599,0,67.43,Medium,-1.57,1
+TEST_0019,Food Services,Ouachita,521406,759.0,0.1024,0.5437,48,0,0.0036,0,42.98,Medium,-5.02,1
+TEST_0020,Construction,Orleans,1042231,690.0,0.1393,0.0,55,0,0.0158,0,64.51,Medium,9.51,1
+TEST_0021,Healthcare,Rapides,767181,805.0,0.3285,1.2682,27,0,1e-04,0,32.76,Low,5.76,1
+TEST_0022,Transportation,Tangipahoa,172236,798.0,0.1868,0.1563,44,0,0.006,0,45.62,Medium,1.62,1
+TEST_0023,Agriculture,Rapides,301411,672.0,-0.056,0.6711,100,1,0.9996,1,100.0,High,0.0,1
+TEST_0024,Food Services,East Baton Rouge,825834,830.0,0.2546,1.2176,15,0,0.0,0,15.73,Low,0.73,1
+TEST_0025,Professional Services,Tangipahoa,613563,675.0,0.0767,0.9926,73,0,0.4221,0,83.44,High,10.44,1
+TEST_0026,Retail,Tangipahoa,323463,850.0,0.1858,0.0,0,0,0.0,0,0.83,Low,0.83,1
+TEST_0027,Technology,Jefferson,1976450,751.0,0.1377,1.0989,53,0,0.0008,0,53.77,Medium,0.77,1
+TEST_0028,Healthcare,St. Tammany,722783,805.0,0.2279,0.6321,23,0,1e-04,0,25.65,Low,2.65,1
+TEST_0029,Technology,East Baton Rouge,273882,718.0,0.0085,0.0,31,0,0.0004,0,36.99,Low,5.99,1
+TEST_0030,Retail,Rapides,1676556,745.0,0.0575,0.0,38,0,0.0007,0,38.51,Low,0.51,1
+TEST_0031,Food Services,Ouachita,127499,850.0,0.3747,0.522,0,0,0.1045,0,42.22,Medium,42.22,1
+TEST_0032,Healthcare,St. Tammany,1310404,758.0,0.1827,1.4386,44,0,0.9822,1,87.64,High,43.64,0
+TEST_0033,Professional Services,Tangipahoa,360956,,0.1291,0.8898,65,0,0.014,0,55.02,Medium,-9.98,1
+TEST_0034,Food Services,Tangipahoa,644149,622.0,0.1163,1.2816,100,1,1.0,1,100.0,High,0.0,1
+TEST_0035,Healthcare,East Baton Rouge,1222444,825.0,0.3035,0.0,0,0,0.0,0,0.0,Low,0.0,1
+TEST_0036,Healthcare,St. Tammany,3000232,770.0,0.249,1.6858,94,1,0.9928,1,93.66,High,-0.34,1
+TEST_0037,Retail,East Baton Rouge,793370,,0.1347,1.7784,44,0,1e-04,0,36.55,Low,-7.45,1
+TEST_0038,Retail,Lafayette,449287,789.0,0.1539,0.0,6,0,0.0,0,6.81,Low,0.81,1
+TEST_0039,Food Services,Rapides,295641,679.0,0.0416,1.7719,81,1,0.9694,1,79.93,High,-1.07,1
+TEST_0040,Professional Services,Lafayette,560537,794.0,0.2392,0.0,4,0,0.0,0,13.18,Low,9.18,1
+TEST_0041,Technology,Lafayette,2549147,,0.1418,0.0,25,0,0.0,0,11.77,Low,-13.23,1
+TEST_0042,Transportation,Lafayette,357408,796.0,0.1571,0.0,11,0,1e-04,0,15.63,Low,4.63,1
+TEST_0043,Food Services,Calcasieu,442373,838.0,0.1892,0.8153,23,0,0.0,0,23.46,Low,0.46,1
+TEST_0044,Manufacturing,Calcasieu,248074,833.0,0.1755,1.7611,54,0,0.0017,0,53.6,Medium,-0.4,1
+TEST_0045,Real Estate,Orleans,1230153,850.0,0.2142,0.0,0,0,0.0,0,0.0,Low,0.0,1
+TEST_0046,Retail,Ouachita,1264933,806.0,0.3252,0.6728,26,0,1e-04,0,25.49,Low,-0.51,1
+TEST_0047,Food Services,Caddo,158292,720.0,-0.0274,1.5356,95,1,0.9572,1,87.19,High,-7.81,1
+TEST_0048,Professional Services,Jefferson,369716,769.0,0.1841,1.5343,68,0,0.0317,0,69.52,Medium,1.52,1
+TEST_0049,Retail,Lafayette,94256,635.0,0.1446,0.9977,100,1,1.0,1,100.0,High,0.0,1
+TEST_0050,Professional Services,Orleans,234267,748.0,0.3314,1.5656,36,0,0.0016,0,44.35,Medium,8.35,1
